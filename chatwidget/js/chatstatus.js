@@ -13,49 +13,31 @@
   // When the DOM is ready, set up the widget.
   $(function () {
     var statusTab = $('.status-tab'),
-        pairButton = $('#join-pair-chat'),
-        statusInfo = $('.status-info'),
-        brevkasser = $('.brevkasser');
-
+        chatButton = $('#join-pair-chat');
+        
     // Updates the actual status text.
     var updateDisplay = function (attributes) {
       // If there are any active one-to-one rooms.
-      if (chatStatus.rooms && chatStatus.rooms.pair.active > 0) {
-        
+      if (chatStatus.rooms && chatStatus.rooms.pair.active > 0) {    
         statusTab.css("background","url('img/green.png') no-repeat");
-        
-        pairButton.css("display","inline-block");
-        statusInfo.hide();
-        brevkasser.hide();
-
+        chatButton.show();
       // If not, check if there are any active group rooms.
       } else if (chatStatus.rooms && chatStatus.rooms.pair.full > 0) {
-        statusTab.css("background","url('img/yellow.png') no-repeat");
-        
-        pairButton.hide();
-        brevkasser.show();
-        statusInfo.show().html("Chatten er optaget. Klik forbi brevkasserne og stil dit sp&oslash;rgsm&aring;l dér, eller se om der ligger et svar du kan bruge.");
-
-        $('.read-more').css("margin","0");
-
+        statusTab.css("background","url('img/yellow.png') no-repeat");       
+        chatButton.hide();
       } else {
-        statusTab.css("background","url('img/red.png') no-repeat");
-          
-          pairButton.hide();
-          brevkasser.show();
-          statusInfo.show();
-
-          statusInfo.html("Chatten er &aring;ben tirsdag og torsdag 18-21. Klik forbi brevkasserne og stil dit sp&oslash;rgsm&aring;l der, eller se om der ligger et svar du kan bruge.");
-        $('.read-more').css("margin","0");
+        statusTab.css("background","url('img/red.png') no-repeat");        
+        chatButton.hide();
       };
 
      };
+     
     // When the document is ready, update the status, and bind the event
     // to have it update automatically later.
     $(window).bind('opekaChatStatusUpdate', updateDisplay);
-
+    
     // When the user clicks the button, ask the chat server to join a room.
-    pairButton.click(function () {
+    chatButton.click(function () {
 	if(!$.browser.opera){	
 		var w = open_window('_blank','http://cyberchat.dk/opeka', 1000, 700);
 	}else{

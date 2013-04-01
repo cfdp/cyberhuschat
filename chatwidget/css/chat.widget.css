@@ -1,6 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Cabin);
+
 .status-wrapper {
-  background: #FFF; 
+  background: #fe9601; /* Old browsers */
+  background: -moz-linear-gradient(top,  #fe9601 0%, #fdb201 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fe9601), color-stop(100%,#fdb201)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #fe9601 0%,#fdb201 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #fe9601 0%,#fdb201 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #fe9601 0%,#fdb201 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #fe9601 0%,#fdb201 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe9601', endColorstr='#fdb201',GradientType=0 ); /* IE6-9 */
   width: 220px;
 }
 .btn {
@@ -12,21 +20,24 @@
   font-family: 'Cabin', sans-serif; 
   font-size: 15px; 
   font-weight: bold; 
-  margin: 25px auto; 
+  margin: 10px auto; 
   padding: 10px 15px; 
   text-decoration: none;
 }
 .btn:hover{cursor: pointer; 
   text-decoration: underline;
 }
+#join-pair-chat{
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
 .btn.brevkasser{margin: 10px 0 0 25px;}
 .btn.pairchat{
   display: none; 
   margin-left: 33px; 
-  margin-top: 50px;
 }
 .status-content{
-  float: right; 
   padding: 0 8px; 
   width: 158px;
 }
