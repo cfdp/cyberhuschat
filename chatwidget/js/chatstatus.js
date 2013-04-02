@@ -26,7 +26,7 @@
         statusTab.css("background","url('img/yellow.png') no-repeat");       
         chatButton.hide();
       } else {
-        statusTab.css("background","url('img/red.png') no-repeat");        
+        statusTab.css("background","url('img/yellow.png') no-repeat");
         chatButton.hide();
       };
 
@@ -47,7 +47,7 @@
       now.getDirectSignInURL('pair', function (signInURL) {
         if (!(chatStatus.rooms && chatStatus.rooms.pair.active > 0) && !(chatStatus.rooms && chatStatus.rooms.pair.full > 0)) {
             w.close();
-            window.parent.location ="http://cyberhus.dk/brevkasse";
+            window.location ="http://cyberhus.dk/brevkasse";
            }
         else {
 			     w.location = signInURL;
