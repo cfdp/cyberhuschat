@@ -17,6 +17,15 @@
         
     // Updates the actual status text.
     var updateDisplay = function (attributes) {
+
+     //For debugging...
+      var debugchat = false;
+      if (debugchat) {
+        statusTab.css("background","url('img/red.png') no-repeat");
+        chatButton.hide();
+        return;
+      }
+
       // If there are any active one-to-one rooms.
       if (chatStatus.rooms && chatStatus.rooms.pair.active > 0) {    
         statusTab.css("background","url('img/green.png') no-repeat");
