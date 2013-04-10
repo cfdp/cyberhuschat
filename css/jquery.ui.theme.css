@@ -7,7 +7,7 @@
 .ui-dialog .ui-dialog-title 	{color: rgb(255,255,255); font-weight: bold;}
 
 .ui-dialog .ui-dialog-titlebar-close							{top: 46%;}
-.ui-dialog .ui-dialog-titlebar-close span.ui-icon-closethick	{background: url('http://cfdpchat/misc/ui/images/ui-icons_222222_256x240.png') -96px -126px no-repeat;}
+.ui-dialog .ui-dialog-titlebar-close span.ui-icon-closethick	{background: url('http://cyberchat.dk/misc/ui/images/ui-icons_222222_256x240.png') -96px -126px no-repeat;}
 .ui-dialog .ui-dialog-titlebar-close:hover span.ui-icon-closethick 	{background: rgb(10,26,36) url('http://cfdpchat/misc/ui/images/ui-icons_888888_256x240.png') -96px -126px no-repeat; border-radius: 2px;}
 
 .ui-dialog .ui-dialog-titlebar-close:hover	{padding: 1px;}
