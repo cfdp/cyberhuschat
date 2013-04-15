@@ -189,7 +189,9 @@ html body.room-size-2	{background: #FF9501;}
 .message-form .form-submit			{position: absolute; right: 11px; top: 16px;}
 
 .message-form .form-submit,
-.leave-room-form .form-submit		{background: rgb(17,202,3); border: 1px solid rgb(3,115,0); border-radius: 2px; color: rgb(255,255,255); font-weight: bold; margin: 0; padding: 10px 15px; text-transform: uppercase;}
+body.logged-in .leave-room-form .form-submit	{display:none;}
+
+/*{background: rgb(17,202,3); border: 1px solid rgb(3,115,0); border-radius: 2px; color: rgb(255,255,255); font-weight: bold; margin: 0; padding: 10px 15px; text-transform: uppercase;}*/
 
 .message-form .form-submit:hover,
 .leave-room-form .form-submit:hover	{background: rgb(37,222,23);}
