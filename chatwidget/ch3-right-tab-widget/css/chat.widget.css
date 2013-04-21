@@ -1,0 +1,70 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin);
+.status-wrapper {
+  background: url('../img/grid_background.png');
+  font-family: Cabin;
+  overflow: hidden;
+  width: 256px;
+}
+.btn {
+  background: #7AC13A;
+  border-radius: 5px; 
+  border-width: 0; 
+  color: #FFF; display: 
+  inline-block; 
+  font-family: 'Cabin', sans-serif; 
+  font-size: 15px; 
+  font-weight: bold; 
+  margin: 5px auto; 
+  padding: 10px 15px; 
+  text-decoration: none;
+}
+.btn:hover{cursor: pointer; 
+  text-decoration: underline;
+}
+.btn.brevkasser{margin: 10px 0 0 25px;}
+
+.btn.pairchat{
+  margin-left: 50px
+  /*margin-top: 50px;*/
+}
+.status-content{
+  float: right; 
+  padding: 0 8px; 
+  width: 190px;
+}
+
+.status-content ul{
+  margin: 0;
+  padding: 0;
+}
+
+.status-content ul li{
+  font-size: 12px;
+  list-style: none;
+
+}
+.status-tab{
+  background:url("../img/grid_background.png") no-repeat; 
+  display: inline-block; 
+  float: left;
+  height: 162px;
+  width: 41px;
+}
+.status-info{
+  font-family: 'Cabin', sans-serif; 
+  font-size: 12px; 
+  margin: 4px 0;
+}
+.read-more {
+  display: inline-block; 
+  margin: 10px 0 0; 
+  text-align: center; 
+  width: 100%;
+}
+.read-more a{
+  color: #0B5A7C; 
+  font-family: 'Cabin', sans-serif; 
+  font-size: 12px; 
+  text-decoration: none;
+}
+.read-more a:hover{text-decoration: underline;}
